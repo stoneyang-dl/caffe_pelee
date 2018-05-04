@@ -1,0 +1,15 @@
+net: "models/peleenet/train_val.prototxt"
+test_iter: 10000
+test_interval: 1000
+base_lr: 0.05
+lr_policy: "poly"
+power: 0.7
+momentum: 0.9
+weight_decay: 0.0001
+max_iter: 600000
+display: 20
+solver_mode: GPU
+type: "SGD"
+snapshot: 1000
+snapshot_prefix: "models/peleenet/snapshots/peleenet_train"
+
